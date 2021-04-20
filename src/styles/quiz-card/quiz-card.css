@@ -1,7 +1,10 @@
 .quiz-card {
-  display: grid;
-  background: var(--color-creme);
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+  margin: 30px;
+  border: 1px var(--color-dark-grey) solid;
+  background: var(--color-creme);
   color: var(--color-dark-grey);
 }
 
@@ -11,7 +14,8 @@
 
 .quiz-card__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 0;
 }
 
 .quiz-card__tag {
