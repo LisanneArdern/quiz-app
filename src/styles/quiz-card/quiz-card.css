@@ -1,0 +1,25 @@
+.quiz-card {
+  display: grid;
+  background: var(--color-creme);
+  padding: 20px;
+  color: var(--color-dark-grey);
+}
+
+.quiz-card__heading {
+  color: var(--color-bright-red);
+}
+
+.quiz-card__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quiz-card__tag {
+  list-style-type: none;
+  padding: 2px;
+  border: 1px var(--color-light-red) solid;
+}
+
+.quiz-card__button {
+  background-color: var(--color-light-red);
+}
