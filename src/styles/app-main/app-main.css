@@ -1,0 +1,6 @@
+.app-main {
+  display: grid;
+  place-items: center;
+  grid-gap: 26px;
+  overflow-y: scroll;
+}
