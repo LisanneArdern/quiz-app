@@ -1,11 +1,19 @@
 .quiz-card {
   display: flex;
   flex-direction: column;
+  max-width: 600px;
   padding: 20px;
   margin: 30px;
   border: 1px var(--color-dark-grey) solid;
   background: var(--color-creme);
   color: var(--color-dark-grey);
+  position: relative;
+}
+
+.quiz-card__bookmark {
+  position: absolute;
+  top: -12px;
+  right: 8px;
 }
 
 .quiz-card__heading {
