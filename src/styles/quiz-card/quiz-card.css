@@ -15,9 +15,14 @@
   position: absolute;
   top: -12px;
   right: 8px;
-  border: 20px var(--color-dark-grey) solid;
+  border: 20px var(--color-yellow) solid;
   border-bottom-color: transparent;
   height: 30px;
+}
+
+.quiz-card__bookmark--selected {
+  border: 20px var(--color-orange) solid;
+  border-bottom-color: transparent;
 }
 
 .quiz-card__heading {
@@ -39,6 +44,6 @@
 }
 
 .quiz-card__button {
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  background-color: var(--color-dark-grey);
+  color: white;
 }
