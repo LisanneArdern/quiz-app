@@ -3,6 +3,9 @@
 }
 
 body {
+  display: grid;
+  grid-template-rows: 48px auto;
+  height: 100vh;
   background-color: var(--color-white);
   color: var(--color-black);
   font-family: sans-serif;
