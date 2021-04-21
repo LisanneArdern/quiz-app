@@ -1,10 +1,11 @@
 .quiz-card {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 500px;
   padding: 20px;
   margin: 30px;
   border: 1px var(--color-dark-grey) solid;
+  border-radius: 8px;
   background: var(--color-creme);
   color: var(--color-dark-grey);
   position: relative;
@@ -20,7 +21,7 @@
 }
 
 .quiz-card__heading {
-  color: var(--color-bright-red);
+  color: var(--color-blue);
 }
 
 .quiz-card__list {
@@ -32,9 +33,12 @@
 .quiz-card__tag {
   list-style-type: none;
   padding: 2px;
-  border: 1px var(--color-light-red) solid;
+  border: 1px var(--color-dark-grey) solid;
+  background-color: var(--color-blue);
+  color: var(--color-white);
 }
 
 .quiz-card__button {
-  background-color: var(--color-light-red);
+  background-color: var(--color-blue);
+  color: var(--color-white);
 }
