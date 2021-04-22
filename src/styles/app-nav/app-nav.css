@@ -1,3 +1,13 @@
 .navigation {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: var(--color-white);
+  border-top: 1px var(--color-dark-grey) solid;
+  align-content: center;
+  justify-items: stretch;
+}
+
+.navigation__icon {
+  width: 30px;
+  padding-top: 5px;
 }
