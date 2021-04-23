@@ -6,6 +6,7 @@
   align-items: center;
   color: var(--color-dark-grey);
   background: var(--color-creme);
+  height: 100%;
 }
 .profile__image {
   width: 70%;
