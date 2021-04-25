@@ -38,9 +38,9 @@
 }
 
 .profile__button {
-  grid-column: 1 / -1;
   width: 50%;
   justify-self: center;
   background-color: var(--color-dark-grey);
   color: white;
+  grid-column: 1 / -1;
 }
