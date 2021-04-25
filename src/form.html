@@ -4,29 +4,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Profile</title>
+    <title>Create</title>
   </head>
   <body>
     <header class="app-header">
-      <h1 class="app-header__heading">Profile</h1>
+      <h1 class="app-header__heading">Create</h1>
     </header>
-    <main class="app-main">
-      <section class="profile">
-        <img class="profile__image" src="./styles/images/user.png"" alt="" />
-        <h2 class="profile__name">Lisanne Ardern</h2>
-        <p class="profile__about">
-          Hi my name is Lisanne! I am looking forward playing a quiz game with
-          you.
-        </p>
-        <h2>Skills</h2>
-        <ul class="profile__tag-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>MS Office</li>
-          <li>Teamwork</li>
-        </ul>
-        <button class="profile__button">Logout</button>
-      </section>
+    <main>
+      <form class="form">
+        <label class="form__queston">
+          Add a question:
+          <textarea cols="30" rows="5" placeholder="Your question"> </textarea>
+        </label>
+
+        <label class="form__answer">
+          Add answer:
+          <textarea cols="30" rows="5" placeholder="The answer"> </textarea>
+        </label>
+        <label class="form__tag-list">
+          Add tags:
+          <textarea cols="30" rows="1" placeholder="Related tags"> </textarea>
+        </label>
+        <button class="form__button">Submit</button>
+      </form>
     </main>
     <nav class="navigation">
       <button>

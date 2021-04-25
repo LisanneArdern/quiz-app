@@ -1,0 +1,16 @@
+.form {
+  display: grid;
+  grid-gap: 20px;
+  color: var(--color-dark-grey);
+  background: var(--color-creme);
+  height: 100%;
+  padding: 16px;
+}
+
+.form__button {
+  width: 50%;
+  height: 40%;
+  justify-self: center;
+  background-color: var(--color-dark-grey);
+  color: white;
+}
