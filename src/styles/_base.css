@@ -4,7 +4,7 @@
 
 html {
   background-color: var(--color-white);
-  max-width: 400px;
+  max-width: 600px;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 h1,
