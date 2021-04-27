@@ -4,17 +4,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: center;
-  color: var(--color-dark-grey);
-  background: var(--color-creme);
-  height: 100%;
+  background: var(--color-white);
+  height: 90%;
+  margin: 20px;
+  border: 1px var(--color-black) solid;
 }
 .profile__image {
   width: 70%;
   border-radius: 50%;
-}
-
-.profile__name {
-  color: var(--color-blue);
 }
 
 .profile__about {
@@ -32,15 +29,15 @@
 .profile__tag-list li {
   list-style-type: none;
   padding: 2px;
-  border: 1px var(--color-dark-grey) solid;
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  border: 2px var(--color-light-blue) solid;
+  color: var(--color-black);
 }
 
 .profile__button {
   width: 50%;
   justify-self: center;
-  background-color: var(--color-dark-grey);
-  color: white;
+  background-color: var(--color-beige);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px var(--color-dark-grey);
   grid-column: 1 / -1;
 }

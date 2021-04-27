@@ -1,7 +1,8 @@
 .app-header {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-primary);
   padding: 12px;
+  border: 1px var(--color-black) solid;
 }
 
 .app-header__heading {

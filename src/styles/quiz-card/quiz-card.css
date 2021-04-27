@@ -3,8 +3,8 @@
   border: 1px var(--color-dark-grey) solid;
   border-radius: 8px;
   width: 300px;
-  background: var(--color-creme);
-  color: var(--color-dark-grey);
+  background: var(--color-white);
+  color: var(--color-black);
   position: relative;
 }
 
@@ -16,17 +16,13 @@
   position: absolute;
   top: -12px;
   right: 8px;
-  border: 20px var(--color-yellow) solid;
+  border: 20px var(--color-beige) solid;
   border-bottom-color: transparent;
   height: 30px;
 }
 .quiz-card__bookmark--selected {
-  border: 20px var(--color-orange) solid;
+  border: 20px var(--color-brown) solid;
   border-bottom-color: transparent;
-}
-
-.quiz-card__heading {
-  color: var(--color-blue);
 }
 
 .quiz-card__list {
@@ -40,12 +36,12 @@
 .quiz-card__tag {
   list-style-type: none;
   padding: 2px;
-  border: 1px var(--color-dark-grey) solid;
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  border: 2px var(--color-light-blue) solid;
+  color: var(--color-black);
 }
 
 .quiz-card__button {
-  background-color: var(--color-dark-grey);
-  color: white;
+  background-color: var(--color-beige);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px var(--color-dark-grey);
 }
