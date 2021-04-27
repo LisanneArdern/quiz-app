@@ -52,3 +52,9 @@ buttonProfile.addEventListener('click', () => {
   buttonForm.classList.remove('active')
   buttonProfile.classList.add('active')
 })
+
+const bookmark = document.querySelector('.quiz-card__bookmark')
+
+bookmark.addEventListener('click', () => {
+  bookmark.classList.toggle('quiz-card__bookmark--selected')
+})
