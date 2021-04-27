@@ -58,3 +58,10 @@ const bookmark = document.querySelector('.quiz-card__bookmark')
 bookmark.addEventListener('click', () => {
   bookmark.classList.toggle('quiz-card__bookmark--selected')
 })
+
+const buttonAnswer = document.querySelector('.quiz-card__button')
+const answer = document.querySelector('.quiz-card__answer')
+
+buttonAnswer.addEventListener('click', () => {
+  answer.classList.toggle('hidden')
+})
