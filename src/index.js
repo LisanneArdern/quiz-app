@@ -3,12 +3,16 @@ const bookmarkPage = document.querySelector('.bookmark-page')
 const formPage = document.querySelector('.form-page')
 const profilePage = document.querySelector('.profile-page')
 
+const header = document.querySelector('[data-header]')
+
 const buttonIndex = document.querySelector('.button-index')
 const buttonBookmark = document.querySelector('.button-bookmark')
 const buttonForm = document.querySelector('.button-form')
 const buttonProfile = document.querySelector('.button-profile')
 
 buttonIndex.addEventListener('click', () => {
+  header.innerText = 'QuizApp'
+
   indexPage.classList.remove('hidden')
   bookmarkPage.classList.add('hidden')
   formPage.classList.add('hidden')
@@ -20,6 +24,8 @@ buttonIndex.addEventListener('click', () => {
   buttonProfile.classList.remove('active')
 })
 buttonBookmark.addEventListener('click', () => {
+  header.innerText = 'Bookmarks'
+
   indexPage.classList.add('hidden')
   bookmarkPage.classList.remove('hidden')
   formPage.classList.add('hidden')
@@ -31,6 +37,8 @@ buttonBookmark.addEventListener('click', () => {
   buttonProfile.classList.remove('active')
 })
 buttonForm.addEventListener('click', () => {
+  header.innerText = 'Create'
+
   indexPage.classList.add('hidden')
   bookmarkPage.classList.add('hidden')
   formPage.classList.remove('hidden')
@@ -42,6 +50,8 @@ buttonForm.addEventListener('click', () => {
   buttonProfile.classList.remove('active')
 })
 buttonProfile.addEventListener('click', () => {
+  header.innerText = 'Profile'
+
   indexPage.classList.add('hidden')
   bookmarkPage.classList.add('hidden')
   formPage.classList.add('hidden')
