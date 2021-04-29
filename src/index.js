@@ -1,14 +1,14 @@
-const indexPage = document.querySelector('.index-page')
-const bookmarkPage = document.querySelector('.bookmark-page')
-const formPage = document.querySelector('.form-page')
-const profilePage = document.querySelector('.profile-page')
+const indexPage = getElement('.index-page')
+const bookmarkPage = getElement('.bookmark-page')
+const formPage = getElement('.form-page')
+const profilePage = getElement('.profile-page')
 
-const header = document.querySelector('[data-header]')
+const header = getElement('[data-header]')
 
-const buttonIndex = document.querySelector('.button-index')
-const buttonBookmark = document.querySelector('.button-bookmark')
-const buttonForm = document.querySelector('.button-form')
-const buttonProfile = document.querySelector('.button-profile')
+const buttonIndex = getElement('.button-index')
+const buttonBookmark = getElement('.button-bookmark')
+const buttonForm = getElement('.button-form')
+const buttonProfile = getElement('.button-profile')
 
 buttonIndex.addEventListener('click', () => {
   header.innerText = 'QuizApp'
@@ -35,6 +35,23 @@ buttonProfile.addEventListener('click', () => {
   selectButton(buttonProfile)
 })
 
+const bookmark = getElement('.quiz-card__bookmark')
+
+bookmark.addEventListener('click', () => {
+  bookmark.classList.toggle('quiz-card__bookmark--selected')
+})
+
+const buttonAnswer = getElement('.quiz-card__button')
+const answer = getElement('.quiz-card__answer')
+
+buttonAnswer.addEventListener('click', () => {
+  answer.classList.toggle('hidden')
+})
+
+function getElement(selector) {
+  return document.querySelector(selector)
+}
+
 function selectButton(button) {
   deactivateButtons()
   button.classList.add('active')
@@ -57,16 +74,3 @@ function hideAllPages() {
   formPage.classList.add('hidden')
   profilePage.classList.add('hidden')
 }
-
-const bookmark = document.querySelector('.quiz-card__bookmark')
-
-bookmark.addEventListener('click', () => {
-  bookmark.classList.toggle('quiz-card__bookmark--selected')
-})
-
-const buttonAnswer = document.querySelector('.quiz-card__button')
-const answer = document.querySelector('.quiz-card__answer')
-
-buttonAnswer.addEventListener('click', () => {
-  answer.classList.toggle('hidden')
-})
