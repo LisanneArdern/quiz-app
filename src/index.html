@@ -6,12 +6,13 @@
     <title>Quiz App</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script defer type="module" src="./index.js"></script>
   </head>
   <body>
     <header class="app-header">
-      <h1 class="app-header__heading">Quiz App</h1>
+      <h1 data-header class="app-header__heading">Quiz App</h1>
     </header>
-    <main class="app-main">
+    <main class="app-main index-page">
       <section class="quiz-card">
         <div
           role="button"
@@ -23,7 +24,7 @@
           What is the biggest animal in the world?
         </p>
         <button class="quiz-card__button">Show answer</button>
-        <p class="quiz-card__answer">
+        <p class="quiz-card__answer hidden">
           The blue whale is the biggest animal on earth.
         </p>
         <ul class="quiz-card__list">
@@ -104,39 +105,106 @@
         </ul>
       </section>
     </main>
+    <main class="app-main bookmark-page hidden">
+      <section class="quiz-card">
+        <div
+          role="button"
+          class="quiz-card__bookmark quiz-card__bookmark--selected"
+          aria-label="bookmark"
+        ></div>
+        <h2 class="quiz-card__heading">Question:</h2>
+        <p class="quiz-card__question">When did Boris Becker win Wimbledon?</p>
+        <button class="quiz-card__button">Show answer</button>
+        <p class="quiz-card__answer">1985</p>
+        <ul class="quiz-card__list">
+          <li class="quiz-card__tag">Tennis</li>
+          <li class="quiz-card__tag">Sport</li>
+          <li class="quiz-card__tag">Wimbledon</li>
+        </ul>
+      </section>
+
+      <section class="quiz-card">
+        <div
+          role="button"
+          class="quiz-card__bookmark quiz-card__bookmark--selected"
+          aria-label="bookmark"
+        ></div>
+        <h2 class="quiz-card__heading">Question:</h2>
+        <p class="quiz-card__question">Who painted the Mona Lisa?</p>
+        <button class="quiz-card__button">Show answer</button>
+        <p class="quiz-card__answer">Leonardo da Vinci</p>
+        <ul class="quiz-card__list">
+          <li class="quiz-card__tag">Art</li>
+          <li class="quiz-card__tag">Louvre</li>
+          <li class="quiz-card__tag">Renaissance</li>
+        </ul>
+      </section>
+    </main>
+    <main class="app-main form-page hidden">
+      <form class="form">
+        <label class="form__queston">
+          Add a question:
+          <textarea cols="30" rows="5" placeholder="Your question"> </textarea>
+        </label>
+
+        <label class="form__answer">
+          Add answer:
+          <textarea cols="30" rows="5" placeholder="The answer"> </textarea>
+        </label>
+        <label class="form__tag-list">
+          Add tags:
+          <textarea cols="30" rows="1" placeholder="Related tags"> </textarea>
+        </label>
+        <button class="form__button">Submit</button>
+      </form>
+    </main>
+    <main class="app-main profile-page hidden">
+      <section class="profile">
+        <img class="profile__image" src="./styles/images/user.png" alt="" />
+        <h2 class="profile__name">Lisanne Ardern</h2>
+        <p class="profile__about">
+          Hi my name is Lisanne! I am looking forward playing a quiz game with
+          you.
+        </p>
+        <h2>Skills</h2>
+        <ul class="profile__tag-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>MS Office</li>
+          <li>Teamwork</li>
+        </ul>
+        <button class="profile__button">Logout</button>
+      </section>
+    </main>
 
     <nav class="navigation">
-      <button class="navigation__button">
-        <a href="index.html"
-          ><img
-            src="./styles/images/homepage.png"
-            alt="Homepage"
-            class="navigation__icon"
-        /></a>
+      <button class="navigation__button button-index active">
+        <img
+          src="./styles/images/homepage.png"
+          alt="Homepage"
+          class="navigation__icon"
+        />
       </button>
-      <button class="navigation__button">
-        <a href="bookmarks.html"
-          ><img
-            src="./styles/images/bookmark.png"
-            alt="Bookmark"
-            class="navigation__icon"
-        /></a>
+      <button class="navigation__button button-bookmark">
+        <img
+          src="./styles/images/bookmark.png"
+          alt="Bookmark"
+          class="navigation__icon"
+        />
       </button>
-      <button class="navigation__button">
-        <a href="form.html"
-          ><img
-            src="./styles/images/pen.png"
-            alt="Create your own quiz card"
-            class="navigation__icon"
-        /></a>
+      <button class="navigation__button button-form">
+        <img
+          src="./styles/images/pen.png"
+          alt="Create your own quiz card"
+          class="navigation__icon"
+        />
       </button>
-      <button class="navigation__button">
-        <a href="profile.html"
-          ><img
-            src="./styles/images/user.png"
-            alt="Profile"
-            class="navigation__icon"
-        /></a>
+      <button class="navigation__button button-profile">
+        <img
+          src="./styles/images/user.png"
+          alt="Profile"
+          class="navigation__icon"
+        />
       </button>
     </nav>
   </body>
