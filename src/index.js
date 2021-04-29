@@ -13,55 +13,50 @@ const buttonProfile = document.querySelector('.button-profile')
 buttonIndex.addEventListener('click', () => {
   header.innerText = 'QuizApp'
 
-  indexPage.classList.remove('hidden')
-  bookmarkPage.classList.add('hidden')
-  formPage.classList.add('hidden')
-  profilePage.classList.add('hidden')
-
-  buttonIndex.classList.add('active')
-  buttonBookmark.classList.remove('active')
-  buttonForm.classList.remove('active')
-  buttonProfile.classList.remove('active')
+  changePages(indexPage)
+  selectButton(buttonIndex)
 })
 buttonBookmark.addEventListener('click', () => {
   header.innerText = 'Bookmarks'
 
-  indexPage.classList.add('hidden')
-  bookmarkPage.classList.remove('hidden')
-  formPage.classList.add('hidden')
-  profilePage.classList.add('hidden')
-
-  buttonIndex.classList.remove('active')
-  buttonBookmark.classList.add('active')
-  buttonForm.classList.remove('active')
-  buttonProfile.classList.remove('active')
+  changePages(bookmarkPage)
+  selectButton(buttonBookmark)
 })
 buttonForm.addEventListener('click', () => {
   header.innerText = 'Create'
 
-  indexPage.classList.add('hidden')
-  bookmarkPage.classList.add('hidden')
-  formPage.classList.remove('hidden')
-  profilePage.classList.add('hidden')
-
-  buttonIndex.classList.remove('active')
-  buttonBookmark.classList.remove('active')
-  buttonForm.classList.add('active')
-  buttonProfile.classList.remove('active')
+  changePages(formPage)
+  selectButton(buttonForm)
 })
 buttonProfile.addEventListener('click', () => {
   header.innerText = 'Profile'
 
-  indexPage.classList.add('hidden')
-  bookmarkPage.classList.add('hidden')
-  formPage.classList.add('hidden')
-  profilePage.classList.remove('hidden')
+  changePages(profilePage)
+  selectButton(buttonProfile)
+})
 
+function selectButton(button) {
+  deactivateButtons()
+  button.classList.add('active')
+}
+function deactivateButtons() {
   buttonIndex.classList.remove('active')
   buttonBookmark.classList.remove('active')
   buttonForm.classList.remove('active')
-  buttonProfile.classList.add('active')
-})
+  buttonProfile.classList.remove('active')
+}
+
+function changePages(page) {
+  hideAllPages()
+  page.classList.remove('hidden')
+}
+
+function hideAllPages() {
+  indexPage.classList.add('hidden')
+  bookmarkPage.classList.add('hidden')
+  formPage.classList.add('hidden')
+  profilePage.classList.add('hidden')
+}
 
 const bookmark = document.querySelector('.quiz-card__bookmark')
 
